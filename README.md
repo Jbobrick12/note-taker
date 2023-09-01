@@ -1,5 +1,5 @@
 ## Description
-This project uses MySQL and allows the user to write and save notes to a database.
+This project uses MySQL and allows the user to write and save notes.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -10,9 +10,11 @@ This project uses MySQL and allows the user to write and save notes to a databas
 ## Installation
       
 ## Usage
+
+![App Notes Page](./public/assets/photos/Screen%20Capture%20006%20-%20Note%20Taker%20-%20localhost.jpg)
       
 ## Credits
-I did not collaborate with anyone, and I did not use any third-party assets.
+The client-side code (html), db.json, css, and index.js was provided by the challenge instructions in week 11.
       
 ## License
 MIT License
