@@ -9,16 +9,6 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static("public"));
 
-//  HTML routess
-
-app.get("*", (req, res) => {
-    res.sendFile(__dirname + "/public/index.html");
-  });
-
-app.get("/notes", (req, res) => {
-  res.sendFile(__dirname + "/public/notes.html");
-});
-
 // API routes
 app.get("/api/notes", (req, res) => {
   fs.readFile("./db/db.json", "utf8", (err, data) => {
@@ -54,6 +44,16 @@ app.post("/api/notes", (req, res) => {
       });
     }
   });
+});
+
+//  HTML routess
+
+app.get("*", (req, res) => {
+    res.sendFile(__dirname + "/public/index.html");
+  });
+
+app.get("/notes", (req, res) => {
+  res.sendFile(__dirname + "/public/notes.html");
 });
 
 // Starts the server
